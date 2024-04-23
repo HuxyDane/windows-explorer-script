@@ -12,7 +12,7 @@
 Скомпилированная версия скрипта доступна в формате `.exe`, можно добавить его в автозагрузку по пути:
 ```C:\Users\ИМЯ_ПОЛЬЗОВАТЕЛЯ\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup```
 
-[Скачать EXE]([https://github.com/HuxyDane/windows-explorer-script/releases/download/1/explorer-tweak.exe](https://github.com/HuxyDane/windows-explorer-script/releases/download/1/exolorer-tweak.exe))
+[Скачать EXE](https://github.com/HuxyDane/windows-explorer-script/releases/download/1/exolorer-tweak.exe)
 
 ## Для недоверчивых
 Вы можете скомпилировать скрипт самостоятельно.
