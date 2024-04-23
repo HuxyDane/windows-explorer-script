@@ -22,5 +22,7 @@
 [Открытый код](https://github.com/HuxyDane/windows-explorer-script/blob/1b16c04fe3eaff99ff5743c253e13ddc7260c983/explorer-tweak.ahk)
 
 ## Протестировано
+
 Windows 11
+
 Windows 10
