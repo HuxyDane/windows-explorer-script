@@ -22,5 +22,6 @@
 
 ## Протестировано
 
-- Windows 11 - нашел баг: поднимается только первая вкладка проводника. Я думаю это можно пофиксить, [заменив функцию NavigateToParentDir]([url](https://github.com/HuxyDane/windows-explorer-script/blob/80762e06d8dc98ecee389e0051460a8fa9d64d98/test.ahk)) просто на Ctrl+вверх, потом посмотрю к чему это приведет
+- Windows 11 - нашел баг: поднимается только первая вкладка проводника. Я думаю это можно пофиксить, [заменив функцию NavigateToParentDir](https://github.com/HuxyDane/windows-explorer-script/blob/80762e06d8dc98ecee389e0051460a8fa9d64d98/test.ahk
+) просто на Ctrl+вверх, потом посмотрю к чему это приведет
 - Windows 10
