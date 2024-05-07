@@ -32,6 +32,15 @@ IsEmptySpace() {
    Return AccObj.accRole(0) = ROLE_SYSTEM_LIST
 }
 
+AccObjectFromPoint(ByRef _idChild_ = "", x = "", y = "") {
+   static VT_DISPATCH := 9, F_OWNVALUE := 1, h := DllCall("LoadLibrary", "Str", "oleacc", "Ptr")
+   
+   (x = "" || y = "") ? DllCall("GetCursorPos", "Int64P", pt) : pt := x & 0xFFFFFFFF | y << 32
+   VarSetCapacity(varChild, 8 + 2*A_PtrSize, 0)
+   if DllCall("oleacc\AccessibleObjectFromPoint", "Int64", pt, "PtrP", pAcc, "Ptr", &varChild) = 0
+      Return ComObject(VT_DISPATCH, pAcc, F_OWNVALUE), _idChild_ := NumGet(varChild, 8, "UInt")
+}
+
 NavigateToParentDir(hWnd) {
-    Send, ^{Up}  ; Отправляем Ctrl+Вверх
+    Send, !{Up}  ;
 }
